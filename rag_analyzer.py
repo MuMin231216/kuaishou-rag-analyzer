@@ -4,8 +4,7 @@ import dashscope
 from langchain_chroma import Chroma
 from langchain_community.embeddings import DashScopeEmbeddings
 
-os.environ["DASHSCOPE_API_KEY"] = "sk-9ad902a79a51469aa15574cdd247e830"
-dashscope.api_key = "sk-9ad902a79a51469aa15574cdd247e830"
+dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 
 def read_csv_data(filename):

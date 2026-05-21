@@ -1,11 +1,12 @@
 import os
+import dashscope
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # 设置 API Key（必须）
-os.environ["DASHSCOPE_API_KEY"] = "sk-9ad902a79a51469aa15574cdd247e830"
+dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 # 文件夹路径（改成你存放 txt 文件的目录）
 folder_path = "E:/project/my_txt_file/kuaishou-earning"

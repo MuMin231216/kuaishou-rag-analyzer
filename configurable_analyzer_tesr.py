@@ -1,7 +1,8 @@
 import csv
 import dashscope
+import os
 
-dashscope.api_key = "sk-9ad902a79a51469aa15574cdd247e830"
+dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 
 def read_csv_data(filename):
