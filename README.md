@@ -43,4 +43,6 @@ python build_vector_store.py
 python rag_analyzer.py
 ```
 
-![{790DC755-91E2-4CFA-89D5-3BE8126A7D8F}](C:/Users/YH/Pictures/Screenshots/{790DC755-91E2-4CFA-89D5-3BE8126A7D8F}.png)
+## 📈 示例输出
+
+![运行结果示例](./demo-output.png)
